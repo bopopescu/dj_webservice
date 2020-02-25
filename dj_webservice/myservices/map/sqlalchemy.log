@@ -1,0 +1,31 @@
+2020-02-24 01:18:57,341 sqlalchemy.pool.impl.QueuePool:DEBUG:base:__connect:MainProcess:26352:Created new connection <pymysql.connections.Connection object at 0x000001B79E090E10>
+2020-02-24 01:18:57,341 sqlalchemy.engine.base.Engine:INFO:base:_execute_context:MainProcess:26352:SHOW VARIABLES LIKE 'sql_mode'
+2020-02-24 01:18:57,341 sqlalchemy.engine.base.Engine:INFO:base:_execute_context:MainProcess:26352:{}
+2020-02-24 01:18:57,344 sqlalchemy.engine.base.Engine:DEBUG:result:_init_metadata:MainProcess:26352:Col ('Variable_name', 'Value')
+2020-02-24 01:18:57,344 sqlalchemy.engine.base.Engine:DEBUG:result:process_rows:MainProcess:26352:Row ('sql_mode', 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION')
+2020-02-24 01:18:57,356 sqlalchemy.engine.base.Engine:INFO:base:_execute_context:MainProcess:26352:SHOW VARIABLES LIKE 'lower_case_table_names'
+2020-02-24 01:18:57,356 sqlalchemy.engine.base.Engine:INFO:base:_execute_context:MainProcess:26352:{}
+2020-02-24 01:18:57,360 sqlalchemy.engine.base.Engine:DEBUG:result:_init_metadata:MainProcess:26352:Col ('Variable_name', 'Value')
+2020-02-24 01:18:57,360 sqlalchemy.engine.base.Engine:DEBUG:result:process_rows:MainProcess:26352:Row ('lower_case_table_names', '1')
+2020-02-24 01:18:57,362 sqlalchemy.engine.base.Engine:INFO:base:_execute_context:MainProcess:26352:SELECT DATABASE()
+2020-02-24 01:18:57,363 sqlalchemy.engine.base.Engine:INFO:base:_execute_context:MainProcess:26352:{}
+2020-02-24 01:18:57,363 sqlalchemy.engine.base.Engine:DEBUG:result:_init_metadata:MainProcess:26352:Col ('DATABASE()',)
+2020-02-24 01:18:57,363 sqlalchemy.engine.base.Engine:DEBUG:result:process_rows:MainProcess:26352:Row ('zhyf',)
+2020-02-24 01:18:57,363 sqlalchemy.engine.base.Engine:INFO:base:_execute_context:MainProcess:26352:show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+2020-02-24 01:18:57,363 sqlalchemy.engine.base.Engine:INFO:base:_execute_context:MainProcess:26352:{}
+2020-02-24 01:18:57,364 sqlalchemy.engine.base.Engine:DEBUG:result:_init_metadata:MainProcess:26352:Col ('Collation', 'Charset', 'Id', 'Default', 'Compiled', 'Sortlen')
+2020-02-24 01:18:57,364 sqlalchemy.engine.base.Engine:DEBUG:result:process_rows:MainProcess:26352:Row ('utf8mb4_bin', 'utf8mb4', 46, '', 'Yes', 1)
+2020-02-24 01:18:57,365 sqlalchemy.engine.base.Engine:INFO:base:_cursor_execute:MainProcess:26352:SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+2020-02-24 01:18:57,365 sqlalchemy.engine.base.Engine:INFO:base:_cursor_execute:MainProcess:26352:{}
+2020-02-24 01:18:57,366 sqlalchemy.engine.base.Engine:INFO:base:_cursor_execute:MainProcess:26352:SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+2020-02-24 01:18:57,366 sqlalchemy.engine.base.Engine:INFO:base:_cursor_execute:MainProcess:26352:{}
+2020-02-24 01:18:57,367 sqlalchemy.engine.base.Engine:INFO:base:_cursor_execute:MainProcess:26352:SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+2020-02-24 01:18:57,367 sqlalchemy.engine.base.Engine:INFO:base:_cursor_execute:MainProcess:26352:{}
+2020-02-24 01:18:57,368 sqlalchemy.pool.impl.QueuePool:DEBUG:base:checkout:MainProcess:26352:Connection <pymysql.connections.Connection object at 0x000001B79E090E10> checked out from pool
+2020-02-24 01:18:57,368 sqlalchemy.engine.base.Engine:INFO:base:_begin_impl:MainProcess:26352:BEGIN (implicit)
+2020-02-24 01:18:57,370 sqlalchemy.engine.base.Engine:INFO:base:_execute_context:MainProcess:26352:SELECT dyf_order.order_id AS dyf_order_order_id, dyf_order.create_time AS dyf_order_create_time, dyf_order.source_id AS dyf_order_source_id, dyf_order.order_time AS dyf_order_order_time, dyf_order.treat_card AS dyf_order_treat_card, dyf_order.reg_num AS dyf_order_reg_num, dyf_order.addr_str AS dyf_order_addr_str, dyf_order.provinces AS dyf_order_provinces, dyf_order.city AS dyf_order_city, dyf_order.zone AS dyf_order_zone, dyf_order.consignee AS dyf_order_consignee, dyf_order.con_tel AS dyf_order_con_tel, dyf_order.send_goods_time AS dyf_order_send_goods_time, dyf_order.storagetype AS dyf_order_storagetype, dyf_order.is_hos_addr AS dyf_order_is_hos_addr, dyf_order.updata_time AS dyf_order_updata_time 
+FROM dyf_order
+2020-02-24 01:18:57,370 sqlalchemy.engine.base.Engine:INFO:base:_execute_context:MainProcess:26352:{}
+2020-02-24 01:18:57,372 sqlalchemy.engine.base.Engine:DEBUG:result:_init_metadata:MainProcess:26352:Col ('dyf_order_order_id', 'dyf_order_create_time', 'dyf_order_source_id', 'dyf_order_order_time', 'dyf_order_treat_card', 'dyf_order_reg_num', 'dyf_order_addr_str', 'dyf_order_provinces', 'dyf_order_city', 'dyf_order_zone', 'dyf_order_consignee', 'dyf_order_con_tel', 'dyf_order_send_goods_time', 'dyf_order_storagetype', 'dyf_order_is_hos_addr', 'dyf_order_updata_time')
+2020-02-24 01:18:57,378 sqlalchemy.pool.impl.QueuePool:DEBUG:base:_finalize_fairy:MainProcess:26352:Connection <pymysql.connections.Connection object at 0x000001B79E090E10> being returned to pool
+2020-02-24 01:18:57,379 sqlalchemy.pool.impl.QueuePool:DEBUG:base:_reset:MainProcess:26352:Connection <pymysql.connections.Connection object at 0x000001B79E090E10> rollback-on-return
